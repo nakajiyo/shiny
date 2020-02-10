@@ -132,13 +132,15 @@ shinyUI(
              
              navbarMenu("Other",
                         tabPanel("About",
-                                 h3("Github id: nakajiyo")),
+                                 h3("The codes are stored in GitHub: nakajiyo/shiny")
+                                 ),
                         tabPanel("Source codes(github)",
-                                 a(href="https://github.com/nakajiyo/shiny",
-                                   p('https://github.com/nakajiyo/shiny'))
+                                 h3(a(href="https://github.com/nakajiyo/shiny",
+                                   p('https://github.com/nakajiyo/shiny'))),
+                                 h3("You can run the codes from R console if put 'runGitHub(nakajiyo/shiny)'")
                                  ),
                         tabPanel("Sepal-Patal",
-                                 img(src="Sepal-petal.jpg", height = 140, width = 180))
+                                 img(src="https://github.com/nakajiyo/shiny/blob/master/Sepal-petal.jpg", height = 140, width = 180))
                         )
              )
   )

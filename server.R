@@ -56,9 +56,9 @@ shinyServer(function(input, output, session) {
     res
   })
   
-  # -------------------------
+  # -----------------------------
   # regression part
-  # -------------------------
+  # -----------------------------
   
   data_for_regression <- reactive({
     data <- callModule(dataSelect, "regression")
@@ -112,9 +112,9 @@ shinyServer(function(input, output, session) {
     abline(a=0, b=1, col="red", lwd=1)
   })
   
-  # -------------------------
+  # -----------------------------
   # classification part
-  # -------------------------
+  # -----------------------------
   
   data_for_classification <- reactive({
     data <- callModule(dataSelect, "classification")
@@ -159,9 +159,9 @@ shinyServer(function(input, output, session) {
     summary(classification_summary())
   })
   
-  # -------------------------
+  # -----------------------------
   # clustering part
-  # -------------------------
+  # -----------------------------
   
   data_for_clustering <- reactive({
     data <- callModule(dataSelect, "clustering")
